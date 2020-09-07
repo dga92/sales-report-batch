@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  messages:
+    basename: messages
+  batch:
+    job:
+      enabled: false
+    jobs:
+      salesReport:
+        enabled: true
+        name: Sales Report
+        description: The job for create the sales data.
+        fileType: .dat
+        chunkSize: 100
+  jpa:
+    show-sql: true
